@@ -1,0 +1,40 @@
+body {
+    background-color: #333;
+    color: #eee;
+    font-family: 'Menlo', 'Monaco', monospace;
+    padding: 40px;
+}
+
+.header {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.red {
+    color: rgb(170, 110, 120);
+}
+
+.blue {
+    color: rgb(120, 150, 170);
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #333;
+    background-color: #eee;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav {
+    background-color: #444;
+    padding: 15px;
+    font-size: 22px;
+}
