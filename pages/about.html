@@ -23,7 +23,7 @@ a good way to fill up this page.</p>
 <p><a class="reference external" href="http://twitter.com/ajaymadhusudan">ajaymadhusudan</a> on Twitter.</p>
 
     <script type="text/javascript">
-      mixpanel.track("Page view");
+      if (document.URL.indexOf("localhost") == -1) mixpanel.track("Page view");
     </script>
     <div id="mixpanel-logo">
       <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" /></a>
