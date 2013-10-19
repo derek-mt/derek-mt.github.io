@@ -1,31 +1,64 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./Inconsolata.otf');
+}
+
+@font-face {
+    font-family: 'Meslo';
+    src: url('./MesloLGM-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Meslo Bold';
+    src: url('./MesloLGM-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Meslo Italic';
+    src: url('./MesloLGM-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Meslo Bold Italic';
+    src: url('./MesloLGM-BoldItalic.ttf');
+}
+
 body {
     background-color: #333;
     color: #eee;
-    font-family: 'Menlo', 'Monaco', monospace;
+    font-family: 'Meslo', 'Monaco', monospace;
     padding: 40px;
 }
 
-div#mixpanel-logo {
-    float: right;
-}
+div#mixpanel-logo { float: right; }
 
 .header {
-    font-size: 50px;
+    font-family: 'Meslo Bold';
     font-weight: 300;
+    font-size: 50px;
 }
 
-.red {
-    color: rgb(170, 110, 120);
+.red { color: rgb(170, 110, 120); }
+
+.blue { color: rgb(120, 150, 170); }
+
+strong { font-family: 'Meslo Bold'; }
+
+code, pre {
+    font-family: 'Inconsolata';
+    font-size: 15pt;
 }
 
-.blue {
-    color: rgb(120, 150, 170);
-}
+em { font-family: 'Meslo Italic'; }
+
+em * strong { font-family: 'Meslo Bold Italic'; }
+
+strong * em { font-family: 'Meslo Bold Italic'; }
 
 a {
     text-decoration: none;
     color: #eee;
-    font-weight: bold;
+    font-family: 'Meslo Bold';
     border-bottom: 2px solid #777;
 }
 
@@ -35,13 +68,9 @@ a:hover {
     border-bottom: 2px dashed #333;
 }
 
-.post {
-    border-bottom: 2px dashed #444;
-}
+.post { border-bottom: 2px dashed #444; }
 
-.nav-item {
-    display: inline;
-}
+.nav-item { display: inline; }
 
 .nav {
     background-color: #444;
