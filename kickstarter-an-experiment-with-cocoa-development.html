@@ -2,41 +2,38 @@
 
 <html>
   <head>
-    <title>
-./dotslash    </title>
-    <link href="/theme/css/style.css" rel="stylesheet" media="screen" />
-    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-    typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-    b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("3d42842755ed3cbf45d7c49d98929f6d");</script><!-- end Mixpanel -->
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css" media="screen" />
+    <title>./dotslash post</title>
   </head>
+  <script type="text/javascript" src="/theme/mixpanel.min.js"></script>
   <body>
-    <h1 class="header"><span class="blue">$</span> <a href="/">./dotslash</a></h1>
-    <ul class="nav">
-        <li class="nav-item"><a href="/pages/about.html">About</a></li>
-      <li class="nav-item"><a href="/archive.html">Archive</a></li>
-    </ul>
-  <div class="post">
-    <h1>Kickstarter - An Experiment With Cocoa Development</h1>
-    <p>
-      <p>In case you didn't know, I do most of my work on a Mac (a beautiful 21-inch iMac, for those of you who care), and I appreciate functional, well-designed, useful, and to-the-point apps. So, using a Mac drew me towards Cocoa development, and an aspiration to create a really good Mac app. This eventually led to the creation of Kickstarter, an app that I hope will (someday) be useful to those of you that use OS X.</p>
+    <h1 class="header">
+      <span class="light-grey">$</span> <span class="grey">
+        <strong>./dotslash</strong>
+      </span> post    </h1>
+    <div class="navbar">
+      <ul class="nav-list">
+        <li><a href="/">home</a></li>
+        <li><a href="/pages/about.html">about</a></li>
+        <li><a href="http://twitter.com/ajaymadhusudan">twitter</a></li>
+        <li><a href="http://github.com/AjayMT">github</a></li>
+      </ul>
+    </div>
+<div class="post">
+  <h2 class="post-title"><span class="light-grey"># </span><span class="grey">Kickstarter - An Experiment With Cocoa Development</span></h2>
+  <div class="post-content">
+    <p>In case you didn't know, I do most of my work on a Mac (a beautiful 21-inch iMac, for those of you who care), and I appreciate functional, well-designed, useful, and to-the-point apps. So, using a Mac drew me towards Cocoa development, and an aspiration to create a really good Mac app. This eventually led to the creation of Kickstarter, an app that I hope will (someday) be useful to those of you that use OS X.</p>
 <p>This blog post will be more about the development experience than the app itself. If you want to know more about Kickstarter, visit its project page <a class="reference external" href="http://ajaymt.github.com/Kickstarter">here</a>.</p>
 <p>Creating a Cocoa app was certainly an interesting experience. It took a while for me to get a 'feel' for the framework and how I'm supposed to use it. I knew some Objective-C, so I wasn't completely lost, but I still wasn't very sure <em>where</em> my code was supposed to go. After a few days of experimentation, things started to make sense. So, I decided to start working on an app.</p>
 <p>After some thinking, I (kind of) knew what my app was going to do -- launch other apps. I realized that, every time I needed to edit a few configuration files, or write some code, I was always launching the same apps (iTerm and Emacs). So I decided that my app would automate this repetitive app-launching process, by letting the user capture 'setups' -- lists of apps to launch, and some shell commands to run. Launching a setup would launch all the apps in the setup, and run the shell commands (with the shell that you choose). This would (hopefully) speed up the process of getting into workflows, and would also let you perform complicated tasks that can only be done through a shell.</p>
 <p>After weeks of coding and debugging, I had a very basic first version that I could unleash upon the world. So I did, and discovered a few bugs. I pushed an update, and realized that the self-updating system didn't work. So I pushed a few more updates, and I had a usable app. Of course, I will update it and improve it, but, for now, it works.</p>
 <p>Get Kickstarter <a class="reference external" href="http://ajaymt.github.com/Kickstarter">here</a>.</p>
 
-    </p>
-    <p>
-      Tags:
-        <a href="/tag/code.html">code</a> 
-        <a href="/tag/cocoa.html">cocoa</a> 
-        <a href="/tag/project.html">project</a> 
-    </p>
-    <p>
-      <i>Posted on 2013-07-30 08:12:00</i>
-    </p>
+    <br />
+    <em>Posted on 30 July 2013</em>
   </div>
+  
+  <!-- begin disqus -->
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_shortname = 'dotslash';
@@ -48,7 +45,9 @@
     })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>  
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  <!-- end disqus -->
+</div>
     <script type="text/javascript">
       if (document.URL.indexOf("localhost") == -1) mixpanel.track("Page view");
     </script>

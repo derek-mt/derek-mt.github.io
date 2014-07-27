@@ -2,114 +2,40 @@
 
 <html>
   <head>
-    <title>
-./dotslash    </title>
-    <link href="/theme/css/style.css" rel="stylesheet" media="screen" />
-    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
-    typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
-    b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
-    mixpanel.init("3d42842755ed3cbf45d7c49d98929f6d");</script><!-- end Mixpanel -->
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css" media="screen" />
+    <title>./dotslash home</title>
   </head>
+  <script type="text/javascript" src="/theme/mixpanel.min.js"></script>
   <body>
-    <h1 class="header"><span class="blue">$</span> <a href="/">./dotslash</a></h1>
-    <ul class="nav">
-        <li class="nav-item"><a href="/pages/about.html">About</a></li>
-      <li class="nav-item"><a href="/archive.html">Archive</a></li>
+    <h1 class="header">
+      <span class="light-grey">$</span> <span class="grey">
+        <strong>./dotslash</strong>
+      </span> home    </h1>
+    <div class="navbar">
+      <ul class="nav-list">
+        <li><a href="/">home</a></li>
+        <li><a href="/pages/about.html">about</a></li>
+        <li><a href="http://twitter.com/ajaymadhusudan">twitter</a></li>
+        <li><a href="http://github.com/AjayMT">github</a></li>
+      </ul>
+    </div>
+  <h3 class="section-header">Blog posts</h3>
+  <div class="post-list">
+    <ul>
+        <li>
+          <span class="grey post-date">26 September 2013</span>> <a href="/anonymity-and-the-internet.html">Anonymity and the Internet</a>
+        </li>
+        <li>
+          <span class="grey post-date">30 July 2013</span>> <a href="/kickstarter-an-experiment-with-cocoa-development.html">Kickstarter - An Experiment With Cocoa Development</a>
+        </li>
+        <li>
+          <span class="grey post-date">20 May 2013</span>> <a href="/writing-good-code.html">Writing good code</a>
+        </li>
+        <li>
+          <span class="grey post-date">27 April 2013</span>> <a href="/hello-world.html">Hello, world!</a>
+        </li>
     </ul>
-    <div class="post">
-      <h1><a href="/anonymity-and-the-internet.html">Anonymity and the Internet</a></h1>
-      <p>
-	<p>I wrote a thing on Medium. Go <a class="reference external" href="https://medium.com/i-m-h-o/eedda5f5d12">read it</a>.</p>
-
-      </p>
-      <p>
-	Tags:
-	  <a href="/tag/writing.html">writing</a> 
-      </p>
-      <p>
-	<i>Posted on 2013-09-26 05:28:00</i>
-      </p>
-    </div>
-    <div class="post">
-      <h1><a href="/kickstarter-an-experiment-with-cocoa-development.html">Kickstarter - An Experiment With Cocoa Development</a></h1>
-      <p>
-	<p>In case you didn't know, I do most of my work on a Mac (a beautiful 21-inch iMac, for those of you who care), and I appreciate functional, well-designed, useful, and to-the-point apps. So, using a Mac drew me towards Cocoa development, and an aspiration to create a really good Mac app. This eventually led to the creation of Kickstarter, an app that I hope will (someday) be useful to those of you that use OS X.</p>
-<p>This blog post will be more about the development experience than the app itself. If you want to know more about Kickstarter, visit its project page <a class="reference external" href="http://ajaymt.github.com/Kickstarter">here</a>.</p>
-<p>Creating a Cocoa app was certainly an interesting experience. It took a while for me to get a 'feel' for the framework and how I'm supposed to use it. I knew some Objective-C, so I wasn't completely lost, but I still wasn't very sure <em>where</em> my code was supposed to go. After a few days of experimentation, things started to make sense. So, I decided to start working on an app.</p>
-<p>After some thinking, I (kind of) knew what my app was going to do -- launch other apps. I realized that, every time I needed to edit a few configuration files, or write some code, I was always launching the same apps (iTerm and Emacs). So I decided that my app would automate this repetitive app-launching process, by letting the user capture 'setups' -- lists of apps to launch, and some shell commands to run. Launching a setup would launch all the apps in the setup, and run the shell commands (with the shell that you choose). This would (hopefully) speed up the process of getting into workflows, and would also let you perform complicated tasks that can only be done through a shell.</p>
-<p>After weeks of coding and debugging, I had a very basic first version that I could unleash upon the world. So I did, and discovered a few bugs. I pushed an update, and realized that the self-updating system didn't work. So I pushed a few more updates, and I had a usable app. Of course, I will update it and improve it, but, for now, it works.</p>
-<p>Get Kickstarter <a class="reference external" href="http://ajaymt.github.com/Kickstarter">here</a>.</p>
-
-      </p>
-      <p>
-	Tags:
-	  <a href="/tag/code.html">code</a> 
-	  <a href="/tag/cocoa.html">cocoa</a> 
-	  <a href="/tag/project.html">project</a> 
-      </p>
-      <p>
-	<i>Posted on 2013-07-30 08:12:00</i>
-      </p>
-    </div>
-    <div class="post">
-      <h1><a href="/writing-good-code.html">Writing good code</a></h1>
-      <p>
-	<p>The golden rule to writing good code is:</p>
-<p><strong>Understand what you want your code to do.</strong></p>
-<p>Once you understand this, writing the code to do it becomes much easier. You can refine
-your code to perform specific tasks well once you know what you want to accomplish.</p>
-<div class="section" id="make-it-modular">
-<h2>Make it modular</h2>
-<p>It's better to have multiple small modules that play a specific role, than to have a
-huge mess of monolithic code. Making your code modular allows you to change things
-without having to change a lot of code. This also allows you to reuse modules of code
-in other projects, rather than having to write the same code again.</p>
-</div>
-<div class="section" id="keep-it-simple">
-<h2>Keep it simple</h2>
-<p>If there's a simpler way to do something, you should probably go that way. Your code
-should be as easy to understand as possible for someone else who is reading it. Apart
-from being understandable, this also makes your code maintainable. In most cases, the
-simplest way to do something is the best.</p>
-</div>
-<div class="section" id="keep-it-object-oriented">
-<h2>Keep it object-oriented</h2>
-<p>The big idea behind object-oriented programming is code reuse. You should try and make
-your code as object-oriented as possible. Wherever you find yourself repeating some
-code multiple times (repeating it conceptually, that is), there's probably a more
-object-oriented way to do it. Create classes even when you know you won't be creating
-many instances of those classes, or using those instances very frequently. Once again,
-this makes your code easier to understand and maintain.</p>
-<p>This should be enough to improve your code a little. If your code hasn't changed after
-reading this, you're probably already practicing most of these guidelines, which means
-you're a good coder. This list will probably grow as I write more code. Until then,
-keep coding well.</p>
-</div>
-
-      </p>
-      <p>
-	Tags:
-	  <a href="/tag/code.html">code</a> 
-	  <a href="/tag/advice.html">advice</a> 
-      </p>
-      <p>
-	<i>Posted on 2013-05-20 03:49:00</i>
-      </p>
-    </div>
-    <div class="post">
-      <h1><a href="/hello-world.html">Hello, world!</a></h1>
-      <p>
-	<p>This blog is now alive!</p>
-
-      </p>
-      <p>
-	Tags:
-	  <a href="/tag/misc.html">misc</a> 
-      </p>
-      <p>
-	<i>Posted on 2013-04-27 12:19:00</i>
-      </p>
-    </div>
+  </div>
     <script type="text/javascript">
       if (document.URL.indexOf("localhost") == -1) mixpanel.track("Page view");
     </script>

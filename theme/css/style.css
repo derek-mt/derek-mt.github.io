@@ -1,79 +1,97 @@
 @font-face {
     font-family: 'Inconsolata';
-    src: url('./Inconsolata.otf');
-}
-
-@font-face {
-    font-family: 'Meslo';
-    src: url('./MesloLGM-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'Meslo Bold';
-    src: url('./MesloLGM-Bold.ttf');
-}
-
-@font-face {
-    font-family: 'Meslo Italic';
-    src: url('./MesloLGM-Italic.ttf');
-}
-
-@font-face {
-    font-family: 'Meslo Bold Italic';
-    src: url('./MesloLGM-BoldItalic.ttf');
+    src: url('/theme/Inconsolata.otf');
 }
 
 body {
-    background-color: #333;
-    color: #eee;
-    font-family: 'Meslo', 'Monaco', monospace;
-    padding: 50px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 13pt;
+    line-height: 1.1;
+    background-color: #f7f7f7;
+    color: #444;
+    padding: 15px;
 }
 
-div#mixpanel-logo { float: right; }
+.grey { color: #888; }
+
+.light-grey { color: #bbb; }
 
 .header {
-    font-family: 'Meslo Bold';
-    font-weight: 300;
-    font-size: 50px;
+    font-size: 35pt;
+    text-align: center;
 }
 
-.red { color: rgb(170, 110, 120); }
-
-.blue { color: rgb(120, 150, 170); }
-
-strong { font-family: 'Meslo Bold'; }
-
-code, pre {
-    font-family: 'Inconsolata';
-    font-size: 15pt;
+.navbar {
+    width: 700px;
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
 }
 
-em { font-family: 'Meslo Italic'; }
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-em * strong { font-family: 'Meslo Bold Italic'; }
+.nav-list > li {
+    width: content-box;
+    display: inline;
+    padding-right: 40px;
+}
 
-strong * em { font-family: 'Meslo Bold Italic'; }
+.section-header {
+    width: 650px;
+    margin: 0px auto;
+    display: block;
+    padding: 20px 10px 0px 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
 
 a {
     text-decoration: none;
-    color: #eee;
-    font-family: 'Meslo Bold';
-    border-bottom: 2px solid #777;
+    color: rgb(80, 100, 140);
+    border-bottom: 1px dotted rgb(60, 80, 120);
 }
 
 a:hover {
-    color: #333;
-    background-color: #eee;
-    border-bottom: 2px dashed #333;
+    color: rgb(120, 140, 180);
+    border-bottom: 1px solid rgb(100, 120, 160);
 }
 
-.post { border-bottom: 2px dashed #444; }
+.post-list {
+    width: 700px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
-.nav-item { display: inline; }
+.post-list > ul {
+    list-style-type: none;
+}
 
-.nav {
-    background-color: #444;
-    padding: 15px;
-    font-size: 22px;
+.post-list > ul > li {
+    padding: 2px 0px;
+}
+
+.post-date {
+    display: inline-block;
+    width: 175px;
+}
+
+.post {
+    padding: 10px;
+}
+
+.post-content {
+    padding: 10px;
+}
+
+#mixpanel-logo {
+    display: inline-block;
+    float: right;
 }
