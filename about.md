@@ -1,11 +1,13 @@
 ---
-layout: page
 title: About
-permalink: /about/
+cmd: about
+layout: page
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+My name is Ajay MT. I write code, mostly open source projects. I'm fairly passionate/enthusiastic about open source
+coding, including but not limited to web development. I'm not a very good writer, and still haven't come up with
+a good way to fill up this page.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+[AjayMT](http://github.com/AjayMT) on Github.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+[ajaymadhusudan](http://twitter.com/ajaymadhusudan) on Twitter.
