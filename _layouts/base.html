@@ -8,20 +8,25 @@
   </head>
   <script type="text/javascript" src="/scripts/mixpanel.min.js"></script>
   <body>
-    <h1 class="header">
-      <span class="light-grey">$</span> <span class="grey">
-        <strong>./dotslash</strong>
-      </span> {{ page.cmd }}
-    </h1>
-    <div class="navbar">
-      <ul class="nav-list">
-        <li><a href="/">home</a></li>
-        <li><a href="/about.html">about</a></li>
-        <li><a href="http://twitter.com/ajaymadhusudan">twitter</a></li>
-        <li><a href="http://github.com/AjayMT">github</a></li>
-      </ul>
+    <div id="wrapper">
+      <h1 class="header">
+        <span class="light-grey">$</span> <span class="grey">
+          <strong>./dotslash</strong>
+        </span> {{ page.cmd }}
+      </h1>
+
+      <div class="navbar">
+        <ul class="nav-list">
+          <li><a href="/">home</a></li>
+          <li><a href="/about.html">about</a></li>
+          <li><a href="http://twitter.com/ajaymadhusudan">twitter</a></li>
+          <li><a href="http://github.com/AjayMT">github</a></li>
+        </ul>
+      </div>
+
+      {{ content }}
     </div>
-    {{ content }}
+
     <script type="text/javascript">
       if (document.URL.indexOf("localhost") == -1) mixpanel.track("Page view");
     </script>
