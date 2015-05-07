@@ -1,21 +1,27 @@
+
 @font-face {
     font-family: 'Inconsolata';
     src: url('/fonts/Inconsolata.otf');
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url('/fonts/PTSerif.ttc');
 }
 
 body {
     font-family: 'Inconsolata', monospace;
     font-size: 13pt;
     line-height: 1.1;
-    background-color: #f7f7f7;
-    color: #444;
+    background-color: #fffffe;
+    color: #222;
     padding: 15px;
 }
 
 #wrapper {
     margin-left: auto;
     margin-right: auto;
-    max-width: 825px;
+    max-width: 750px;
 }
 
 .grey { color: #888; }
@@ -23,7 +29,7 @@ body {
 .light-grey { color: #bbb; }
 
 .header {
-    font-size: 35pt;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -52,6 +58,14 @@ body {
     margin: 0px auto;
     display: block;
     padding: 20px 10px 0px 10px;
+}
+
+blockquote {
+    color: #888;
+    border-left: 5px solid #bbb;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 a {
@@ -91,7 +105,9 @@ a:hover {
 }
 
 .post-content {
-    padding: 10px;
+    font-family: 'PT Serif', serif;
+    font-size: 12pt;
+    line-height: 1.2;
 }
 
 #mixpanel-logo {
