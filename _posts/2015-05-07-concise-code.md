@@ -22,7 +22,7 @@ Here's another snippet of code that accomplishes exactly the same thing:
 
 For someone who doesn't know what it's supposed to do, it'll take a little longer to understand this piece of code than the previous example. It's still pretty simple, but (in my experience) the complexity of code created by unnecessary concision increases nearly exponentially as more code is added.
 
-*Note:* I use the term 'complexity' to describe how easy/hard some code is to understand, not the complexity of the algorithm(s) used.
+*Note:* I use the term 'complexity' to describe how easy/hard some code is to understand, not (necessarily) the complexity of the algorithm(s) used.
 
 Basically, the more code you have, the more complexity you will create by condensing it (because it will do more stuff).
 

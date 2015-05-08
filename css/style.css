@@ -1,7 +1,7 @@
 
 @font-face {
-    font-family: 'Inconsolata';
-    src: url('/fonts/Inconsolata.otf');
+    font-family: 'PT Mono';
+    src: url('/fonts/PTM55FT.ttf');
 }
 
 @font-face {
@@ -10,11 +10,11 @@
 }
 
 body {
-    font-family: 'Inconsolata', monospace;
-    font-size: 13pt;
+    font-family: 'PT Mono', monospace;
+    font-size: 12pt;
     line-height: 1.1;
-    background-color: #fffffe;
-    color: #222;
+    background-color: #fff;
+    color: #111;
     padding: 15px;
 }
 
