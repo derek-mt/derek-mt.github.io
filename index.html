@@ -18,7 +18,6 @@
         <div class="sidebar">
           <ul class="sidebar-ul">
             <li class="sidebar-li"><a href="#top">Hello, world!</a></li>
-            <li class="sidebar-li"><a href="#background">Background</a></li>
             <li class="sidebar-li"><a href="#projects">Projects</a></li>
             <li class="sidebar-li"><a href="#goals">Goals</a></li>
           </ul>
@@ -29,33 +28,53 @@
       <div>
         <h2 id="top" class="section-header">Hello, world!</h2>
         <div class="prose">
-          I am Ajay Tatachar, an aspiring <strong>computer programmer</strong> and <strong>molecular geneticist</strong>.
+          I am Ajay Tatachar, an aspiring <strong>computer scientist</strong> and <strong>molecular geneticist</strong>.
           <br />
           <br />
-          I am currently a freshman at the <a href="http://illinois.edu">University of Illinois at Urbana-Champaign</a> majoring in Biology.
-        </div>
-
-        <div class="section-padding"></div>
-        <h3 id="background" class="section-header">Background</h3>
-        <div class="prose">
-          Blurb
+          I am currently a sophomore at the <a href="http://illinois.edu">University of Illinois at Urbana-Champaign</a> majoring in Biology.
+          <br />
+          <br />
+          I spend most of my free time writing <a href="https://github.com/AjayMT">open source software</a> and <a href="https://cs125.cs.illinois.edu/info/people/#captains">teaching computer science</a>.
         </div>
 
         <div class="section-padding"></div>
         <h3 id="projects">Projects</h3>
         <div class="prose">
-          Here's some stuff I've worked on:
+          Most of my work is exploratory; I write software to learn and experiment with new ideas. Here are some of the things I've built:
           <ul>
-            <li><strong><a href="http://github.com/AjayMT/golsp">Golsp</a></strong> is a simple functional programming language</li>
+            <li><strong><a href="https://github.com/AjayMT/mako">Mako</a></strong> is an operating system for 32-bit x86-compatible computers. It features a graphical user interface, an ext2 filesystem, a Lua interpreter and <a href="http://ajaymt.github.io/mako">much more</a>. I wrote it entirely from scratch in approximately six months to learn about how operating systems work (and learnt a lot more in the process.)</li>
+            <br />
+            <li><strong><a href="https://github.com/AjayMT/thorin">thorin</a></strong> is a simple debugger for C programs on linux and macOS. It uses the <a href="http://man7.org/linux/man-pages/man2/ptrace.2.html">ptrace</a> mechanism to trace processes on Linux and <a href="https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Mach/Mach.html">mach ports</a> on macOS, and reads debugging information from <a href="http://dwarfstd.org/">DWARF</a> files. thorin was my first time writing Rust and exploring the System V ABI, a frustrating but very educational experience.</li>
+            <br />
+            <li><strong><a href="http://github.com/AjayMT/golsp">Golsp</a></strong> is an interpreted, general-purpose, lisp-like programming language implemented entirely in Go and itself. It features a simple standard library and extensible module system, and its functional purity and Go runtime make it a good fit for highly concurrent applications. Golsp was my first time designing and implementing a programming language from scratch.</li>
+            <br />
+            <li><strong><a href="http://github.com/AjayMT/jtrace">jtrace</a></strong> is a <a href="https://www.oracle.com/technetwork/articles/javase/index-140680.html">JVM native agent</a> that traces the state of a Java program as it executes. I wrote this tool (and <a href="https://github.com/AjayMT/java-complexity">this one</a>) for <a href="https://cs125.cs.illinois.edu">CS 125</a>, UIUC's introductory computer science class.</li>
+            <br />
+            <li><strong><a href="http://github.com/AjayMT/crunch">crunch</a></strong> is a debugging and memory profiling tool for macOS based on valgrind's <a href="http://valgrind.org/docs/manual/mc-manual.html">memcheck</a> that tracks memory allocations and detects leaks and errors. I wrote this tool mostly because I could not use valgrind on macOS, and ended up learning a lot about dynamic linking and the <code>DYLD_INSERT_LIBRARIES</code> code-injection mechanism in the process.</li>
+            <br />
+            <li><strong><a href="http://github.com/AjayMT/trash-detector">trash-detector</a></strong> is a 36-hour hackathon project developed at <a href="https://www.hackillinois.org">HackIllinois 2019</a> by me and two teammates. It uses a convolutional neural network to detect trash (like plastic bottles and crushed cans) in images. This idea originated as a joke ("What if we built a <em>real life</em> garbage collector?") but turned out to be a rather useful (and ambitious) project. Because of the lack of comprehensive 'garbage' datasets, we had to take ~300 images of miscellaneous hackathon litter to train our network.</li>
+            <br />
+            <li><strong><a href="http://github.com/AjayMT/Shebang">Shebang</a></strong> is a simple macOS productivity tool that takes advantage of the powerful task automation functionality of the POSIX shell. Shebang works just like Spotlight, but executes shell commands instead of searching for things. It is designed to work with your existing workflow, so it uses your default shell and reads the appropriate configuration file (.bashrc, .zshrc, etc.) for custom commands and aliases.</li>
           </ul>
+
+          I've also written many <a href="https://www.npmjs.com/~ajaymt">small JavaScript modules</a> and <a href="https://pypi.org/user/ajaymt/">Python packages</a>.
         </div>
 
         <div class="section-padding"></div>
         <h3 id="goals">Goals</h3>
         <div class="prose">
-          Here are some things I want to do:
+          I'm always looking for new projects to work on, especially things that I've never done before. Here's some of my todo-list right now:
           <ul>
-            <li>Build an operating system from scratch</li>
+            <li>Design a (statically typed, performant) programming language and build a compiler from scratch.</li>
+            <li>Learn more about (and possibly work on) models for <a href="https://www.sciencedirect.com/science/article/pii/0045603986900229">simulating tissue growth</a>.</li>
+            <li>Program a <a href="http://www.ncsa.illinois.edu/enabling/bluewaters">supercomputer</a>.</li>
+            <li>Program a <a href="https://www.raspberrypi.org/products/raspberry-pi-zero/">microcomputer</a>.
+              <ul>
+                <li>In particular, embedded medical devices and biometrics are a very difficult (and therefore interesting) problem space.</li>
+              </ul>
+            </li>
+            <li>Build a reasonbly fast 3D rendering engine atop <a href="https://www.khronos.org/vulkan/">Vulkan</a>.</li>
+            <li>Learn Haskell.</li>
           </ul>
         </div>
 
@@ -75,13 +94,8 @@
             <a href="mailto:ajaymt2@illinois.edu">ajaymt2@illinois.edu</a>
           </div>
           <div id="links">
-            <a href="assets/Resume.pdf">Resume</a>
-            ::
-            <a href="https://github.com/AjayMT">GitHub</a>
-            ::
-            <a href="https://pypi.org/user/ajaymt/">PyPI</a>
-            ::
-            <a href="https://www.npmjs.com/~ajaymt">NPM</a>
+            [<a href="assets/Resume.pdf">Resume</a>]
+            [<a href="https://github.com/AjayMT">GitHub</a>]
           </div>
         </div>
       </div>
