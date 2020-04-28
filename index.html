@@ -42,6 +42,10 @@
         <div class="prose">
           Most of my work is exploratory; I write software to learn and experiment with new ideas. Here are some of the things I've built:
           <ul>
+            <li><strong><a href="https://github.com/AjayMT/silk">Silk</a></strong> is a small systems programming language that compiles to LLVM. It is designed to be as simple
+              and flexible as C, but more pleasant to write; among other features, it has a sophisticated static type system that includes parametric types. I spent
+              approximately six months designing and implementing the language and compiler, which is written entirely in OCaml.</li>
+            <br />
             <li><strong><a href="https://github.com/AjayMT/mako">Mako</a></strong> is an operating system for 32-bit x86-compatible computers. It features a graphical user interface, an ext2 filesystem, a Lua interpreter and <a href="http://ajaymt.github.io/mako">much more</a>. I wrote it entirely from scratch in approximately six months to learn about how operating systems work (and learnt a lot more in the process.)</li>
             <br />
             <li><strong><a href="https://github.com/AjayMT/thorin">thorin</a></strong> is a simple debugger for C programs on linux and macOS. It uses the <a href="http://man7.org/linux/man-pages/man2/ptrace.2.html">ptrace</a> mechanism to trace processes on Linux and <a href="https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Mach/Mach.html">mach ports</a> on macOS, and reads debugging information from <a href="http://dwarfstd.org/">DWARF</a> files. thorin was my first time writing Rust and exploring the System V ABI, a frustrating but very educational experience.</li>
@@ -65,7 +69,7 @@
         <div class="prose">
           I'm always looking for new projects to work on, especially things that I've never done before. Here's some of my todo-list right now:
           <ul>
-            <li>Design a (statically typed, performant) programming language and build a compiler from scratch.</li>
+            <li>Write a simple, portable assembler and linker (that can run on my operating system)</li>
             <li>Learn more about (and possibly work on) models for <a href="https://www.sciencedirect.com/science/article/pii/0045603986900229">simulating tissue growth</a>.</li>
             <li>Program a <a href="http://www.ncsa.illinois.edu/enabling/bluewaters">supercomputer</a>.</li>
             <li>Program a <a href="https://www.raspberrypi.org/products/raspberry-pi-zero/">microcomputer</a>.
